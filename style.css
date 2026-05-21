@@ -278,6 +278,9 @@ h3 {
   border: 2px solid var(--couleur-bordure);
   border-radius: 25% 10%;
   padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-number {

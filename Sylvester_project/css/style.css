@@ -23,7 +23,7 @@ header nav ul li a{
     font-family: "Montserrat";
     font-variant: small-caps;
     text-transform: uppercase;
-    color: white;
+    color: black;
     font-size: 16px;
 }
 header nav ul li a:hover, .ici{
@@ -38,7 +38,7 @@ header nav ul li a:hover, .ici{
     align-items: center;
 }
 .indexheader h1{
-    color: aliceblue;
+    color: #B79FC2;
     text-transform: uppercase;
     font-weight: 200px;
 }
