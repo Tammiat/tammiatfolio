@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "DolceVita";
+    font-weight: normal;
+    src: url("/fonts/DolceVita.woff2") format("woff2");
+}
+@font-face {
+    font-family: "DolceVitaLight";
+    font-weight: normal;
+    src: url("/fonts/DolceVitaLight.woff2") format("woff2");
+}
+@font-face {
+    font-family: "NeotricBold";
+    font-weight: normal;
+    src: url("/fonts/NEOTERIC-Bold.woff2") format("woff2");
+}
+
+header{
+    height:70px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+}
+header img{
+    height: 50px;
+    margin:10px;
+}
+header nav{
+    display: flex;
+    align-items: end;
+    margin-right: 10px;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+header nav ul li{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+header nav ul li a{
+    color: black;
+    text-decoration:none;
+    font-family: "NeotricBold";
+    padding-right: 7px;
+    text-transform: uppercase;
+    height: 30px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+header nav ul li a:hover, .ici{
+    border-bottom: 6px solid black;
+
+}
+header nav ul li p{
+    padding-right: 7px;
+}
+section{
+    background:url("../img/fond3.jpg") center;
+    height: calc(100vh - 70px);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section h1 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "DolceVita";
+    font-weight: normal;
+    font-size: 100px;
+}
+section ::first-line{
+    font-weight: normal;
+    font-family: "DolceVitaLight";
+}
+section>div{
+    display: flex;    
+}
+section>div div{
+    width: 150px;
+    height:150px;
+    margin: 50px;
+    border: 2px solid white;
+}
+section a{
+    color: black;/* couleur du lien A*/
+    padding: 15px 30px; /*ajoute une marge interne de 15px en haut et en bas et 30px à gauche et à droite*/
+    background: white;/*fond de couleur*/
+    font-family: "Dolce";/*change la font*/
+    letter-spacing: 1px;/*espace les lettres*/
+    text-decoration: none;/*enlève le soulignement*/
+    transition:0.5s;/*va mettre un effet sur les changements du hover*/
+}
+section a:hover{
+    background: black;/* change la couleur de fond au survol*/
+    color:white;/* change la couleur du texte au survol*/
+}
+
+#rotation>div div:first-of-type{
+    transform: rotate(45deg);
+}
+#rotation>div div:nth-of-type(2):hover{
+    transform:rotate(45deg);
+}
+#rotation>div div:nth-of-type(3){
+    transition: 2s;
+}
+#rotation>div div:nth-of-type(3):hover{
+    transform: rotate(45deg);
+}
+
+#zoom>div div:first-of-type{
+    transform: scale(1.2);
+}
+#zoom>div div:nth-of-type(2):hover{
+    transform: scale(0.8);
+}
+#zoom>div div:nth-of-type(3){
+    transition: 0.5s; /*ajoute l'effet sur la rotation*/
+}
+#zoom>div div:nth-of-type(3):hover{/*au survol ça tourne*/
+    transform: scale(0.3);/*rotation de 45degrès*/
+}
+
+#incli>div div:first-of-type{
+    transform: skewX(15deg);/*va incliner la première div sur l'axe des X (horizontalement)*/
+}
+#incli>div div:nth-of-type(2):hover{
+    transform: skewY(15deg); /*va incliner la première div sur l'axe des Y (verticalement)*/
+}
+#incli>div div:nth-of-type(3){
+    transition: 0.5s; /*ajoute l'effet sur l'inclinaison*/
+}
+#incli>div div:nth-of-type(3):hover{/*au survol (hover) ça s'incline*/
+    transform: skewX(15deg);/*va incliner la première div sur l'axe des X (horizontalement)*/
+}
+#dep>div div:first-of-type{
+    transform: translate(10px, 15px);/*va déplacer la div de 10px sur l'axe des X et de 15px sur l'axe des Y*/
+}
+#dep>div div:nth-of-type(2):hover{
+    transform: translateY(15px);/*va déplacer la div de 15px sur l'axe des Y*/
+}
+#dep>div div:nth-of-type(3){
+    transition: 0.5s; /*ajoute l'effet sur le déplacement*/
+}
+#dep>div div:nth-of-type(3):hover{/*au survol (hover) ça se déplace*/
+    transform: translateX(15px);/*va déplacer la div de 15px sur l'axe des X*/
+}
+
+#ori>div div:first-of-type{
+    transform-origin:top right;/*change le point d'origine de ma transformation.
+    La rotation va se faire part rapport à l'angle haut droit*/
+    transform: rotate(45deg);/*créer une rotation sur la première div des l'ouverture de la page*/
+}
+#ori>div div:nth-of-type(2){
+    transform-origin:bottom left;/*change le point d'origine de ma transformation.
+    La rotation va se faire part rapport à l'angle bas gauche*/
+}
+#ori>div div:nth-of-type(2):hover{
+    transform: rotate(45deg);/*créer une rotation sur la deuxième div*/
+}
+#ori>div div:nth-of-type(3){
+    transform-origin:bottom right;/*change le point d'origine de ma transformation.
+    La rotation va se faire part rapport à l'angle bas droit*/
+    transition: 0.5s; /*ajoute l'effet sur le déplacement*/
+}
+#ori>div div:nth-of-type(3):hover{/*au survol (hover) ça se déplace*/
+    transform: rotate(45deg);/*créer une rotation sur la troisieme div*/
+}

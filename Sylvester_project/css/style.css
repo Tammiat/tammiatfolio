@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/******************************************DEBUT HEADER**************************/
+header nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+header nav ul li{
+    padding: 10px;
+}
+header nav ul li a{
+    text-decoration:none;
+    font-family: "Montserrat";
+    font-variant: small-caps;
+    text-transform: uppercase;
+    color: white;
+    font-size: 16px;
+}
+header nav ul li a:hover, .ici{
+    border-bottom: 6px solid black;
+
+}
+.indexheader{
+    height: 90vh;
+    background: url("/img/BUBBLE\ WALLPAPER.jpg") fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.indexheader h1{
+    color: aliceblue;
+    text-transform: uppercase;
+    font-weight: 200px;
+}
+/*************************************FIN HEADER*******************************************/
+/*********************************************INDEX*****************************************/
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#indexmain{
+    background-color: #B79FC2;
+}
+#indexmain nav ul{
+    list-style: none;
+}
+#indexmain nav ul li a{
+    text-decoration: none;
+    font-family: "Montserrat";
+    font-variant: small-caps;
+    color: white;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+#indexmain nav ul li a:hover{
+    border-bottom: 3px solid black;
+
+}
+/*******************************************FIN INDEX*******************************************/
+/********************************************PURPLE*************************************************/
+.purple{
+    background-color:rgb(105, 111, 150);
+}
+.purple div{
+    width: 300px;
+}
+/******************************************** FIN PURPLE*************************************************/
+/********************************************PINK*************************************************/
+.pink{
+    background-color: pink;
+}
+.pink div{
+    width: 300px;
+}
+/********************************************FIN PINK*************************************************/
+/********************************************BLUE*************************************************/
+.blue{
+    background-color: pink;
+}
+.blue div{
+    width: 20%;
+    height: 10%;
+}
+/********************************************FIN BLUE*************************************************/
+/********************************************MAIN COMMUN*************************************************/
+section div {
+    outline-style: double;
+    outline-color: black;
+    outline-width: thick;
+    margin: 5px;
+}
+section img{
+    vertical-align: top;
+    width: 100%;
+}
+ section h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+ }
+ section h3{
+    text-align: center;
+    font-variant: small-caps;
+ }
+ /********************************************MAIN COMMUN*************************************************/
+ /********************************************FOOTER*************************************************/
+ footer{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-variant: small-caps;
+    background: #CCB6CD;
+    font-size: 20px;
+ }
+ footer button{
+    padding: 5px;
+    cursor: pointer;
+ }
+ /********************************************FIN FOOTER*************************************************/

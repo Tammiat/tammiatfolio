@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+body{
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+section{
+    width: 450px;
+    height:450px;
+    background: white;
+    flex-wrap: wrap;
+    display: flex;
+}
+section div{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section div img{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.bas:hover img {
+    transform:translateY(90%);
+}
+.haut:hover img {
+    transform:translateY(-90%);
+}
+.gauche:hover img {
+    transform:translateX(-90%);
+}
+.droite:hover img {
+    transform:translateX(90%);
+}

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+
+
+#CarroisG{
+    font-family: 'Carrois Gothic SC', sans-serif;
+}
+
+#YesevaO{
+        font-family: 'Yeseva One', sans-serif;
+}
+
+#Roboto{
+        font-family: 'Roboto', sans-serif;
+}
+
+#PlayfairD{
+        font-family: 'Playfair Display', sans-serif;
+}
+
+#Righteous{
+        font-family: 'Righteous', sans-serif;
+}
+
+#LondrinaO{
+        font-family: 'Londrina Outline', sans-serif;
+}
+
+#YanoneK{
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+#FjallaO{
+        font-family: 'Fjalla One', sans-serif;
+}
+
+#ArchivoB{
+        font-family: 'Archivo Black', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav {
+    border: 1px dotted;
+    position: fixed;
+    top: 1vw;
+    right: 1vw;
+    ul {
+        padding: 10px;
+        list-style: none;
+        display: flex;
+        gap: 10px;
+
+        li {
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
+
+#typo {
+    border: 2px solid;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+        margin: 10px;
+        p{
+            font-size: 34px;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    position: absolute;
+}
+main>button{
+    position: fixed;
+    height: 5%;
+    top: 5px;
+    right: 5px;
+}
+button{
+    cursor: pointer;
+}
+section{
+    height: 100%;
+    width: 300px;
+    border: 2px solid;
+}
+section>div{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}

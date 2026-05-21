@@ -1,0 +1,137 @@
+/************FONT FAMILY*********************/
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.vollkorn{
+    font-family: "Vollkorn", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.yeseva-one-regular {
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+/************FONT FAMILY*********************/
+/*********MODIFICATION HEADER*************/
+#header{
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+}
+#header #logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-transform:capitalize;
+    font-family: "Yeseva One";
+
+}
+#header nav{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 50px;
+
+}
+#header nav ul {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#header ul li {
+margin-right: 20px;
+}
+#header nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 25px;
+    margin-right: 20px;
+    font-family: "Roboto";
+}
+#header nav ul li a:hover{
+    border-bottom: 3px solid;
+ 
+}
+#header #monCompte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+#header #monCompte p:hover{
+    border-bottom: 3px solid;
+}
+#header #monCompte img{
+    margin-right: 10px;
+    width: 30%;
+}
+/*************FIN MODIFICATION HEADER*********************/
+/*******************MODIFICATION SECTION 1, SECTION PRINCIPALE**********************/
+#section1 h1{
+    text-align: center;
+    font-size: 39.72px;
+    margin-bottom: 20px;
+    font-family: "Roboto";
+}
+#section1 p{
+    text-align: center;
+    font-size: 28px;
+    font-family: "Vollkorn";
+}
+#section1{
+    height: 76vh;
+    background-image: url(animated-picto-green.fe65e5a3.gif);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/******************* FIN MODIFICATION SECTION 1, SECTION PRINCIPALE**********************/
+/******************* MODIFICATION SECTION 2, SECTION CONTACT**********************/
+#section2{
+    display: flex;
+    justify-content: space-between;
+}
+#section2 img{
+    width: 15%;
+
+}
+#section2 div:nth-of-type(1){
+    margin-left: 10px;
+}
+#section2 div:nth-of-type(2){
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 70px;
+    width: 20%;
+}
+#section2 p{
+    text-transform: uppercase;
+    font-family: "Roboto";
+    color: white;
+    font-size: 18px;
+    margin-right: 10px;
+}
+/******************* FIN MODIFICATION SECTION 2, SECTION CONTACT**********************/
+/********************MEDIA QUERIES****************************/
+@media screen and (max-width:1150px){
+    #header nav{
+        display: none;
+}}
+/********************FIN MEDIA QUERIES****************************/

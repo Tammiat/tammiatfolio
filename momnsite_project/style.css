@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    padding: 10px;
+    font-variant: small-caps;
+    font-weight: normal;
+    font-size: 30px;
+}
+button{
+    font-variant: small-caps;
+    padding: 5px;
+    cursor: pointer;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    background-color: burlywood;
+    height: 100vh;
+}
+p{
+    width: 200px;
+    margin: 0 auto ;
+    font-variant: small-caps;
+}
+main h1{
+    text-transform: capitalize;
+    margin: 10px;
+    font-size: 50px;
+}

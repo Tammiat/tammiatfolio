@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+/**********************DEBUT HEADER****************/
+}
+header{
+    height: 80vh;
+    background: url("../img/fond.jpg") fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+nav{
+    position: fixed;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.7);
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    border-bottom: 1.5px solid black;
+    padding: 10 px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+nav ul li a:hover{
+    color: gray;
+    text-decoration: line-through;
+}
+nav ul li:nth-of-type(3){
+    border-bottom: none;
+}
+header div img{
+    position: absolute;
+}
+/**********************FIN HEADER****************/
+main{
+    display: flex;
+    justify-content: flex-end;
+}
+section{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+section .divprinci{
+    margin: 30px;
+    border: 2px solid;
+    overflow: hidden;
+
+}
+section .divprinci img{
+    height:250px;
+    width:250px;
+}
+section>.divprinci>div{
+    position: relative;
+}
+.div3{
+    background: rgba(0, 0, 0, 0.7);
+    width:250px;
+    height:250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left:0;
+    color: white;
+}
+footer{
+    height: 30vh;
+    background-color: gray;
+}
+.haut .div3{
+    transition: 1.5s;
+    transform: translateY(-100%);
+}
+.haut:hover .div3{
+    transform:translateY(0)
+}

@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    color: white;
+}
+header{
+    background-image: linear-gradient(lightpink, lightslategrey);
+    margin-top: 30px;
+    height: 60px;
+    display: flex;/*la boite devient flexible*/
+    justify-content: left; /* permet de repartir sur la largeur*/
+    align-items: left; /* permet repartir sur la hauteur */
+}
+#section1{
+    background-image: url("../img/image.jpg");
+    margin-top: 20px;
+    height: 400px;
+    display: flex;/*la boite devient flexible*/
+}
+#section2{ 
+    border: solid 2px lightgrey;
+    margin-top: 20px;
+    display: flex;/*la boite devient flexible*/
+    justify-content: center; /* permet de repartir sur la largeur*/
+    align-items: center; /* permet repartir sur la hauteur */
+    flex-wrap: wrap;
+}
+.divprincipale{ 
+    background-color: lightpink;
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    display: flex;/*la boite devient flexible*/
+    justify-content: center; /* permet de repartir sur la largeur*/
+    align-items: center; /* permet repartir sur la hauteur */
+}
+.divsecondaire {
+    background-color: lightcoral;
+    width: 100px;
+    height: 100px;
+    display: flex;/*la boite devient flexible*/
+    justify-content: left; /* permet de repartir sur la largeur*/
+    align-items: left; /* permet repartir sur la hauteur */
+}
+.divsecondaire:hover{
+    display: none;
+}
+footer{
+   background-image: linear-gradient(lightpink, lightslategrey);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 80px;
+    display: flex;/*la boite devient flexible*/
+    justify-content: center; /* permet de repartir sur la largeur*/
+    align-items: center; /* permet repartir sur la hauteur */
+}
+
+nav {
+    border-bottom: 1px solid black;
+  }
+  
+  .crumbs ol {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .crumb {
+    display: inline-block;
+  }
+  
+  .crumb a::after {
+    display: inline-block;
+    content: '>';
+    font-size: 80%;
+    padding: 0 3px;
+  }

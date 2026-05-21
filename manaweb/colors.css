@@ -1,0 +1,36 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    border: 1px dotted;
+    position: fixed;
+    top: 1vw;
+    right: 1vw;
+    ul {
+        padding: 10px;
+        list-style: none;
+        display: flex;
+        gap: 10px;
+
+        li {
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+
+#purples, #green, #browns {
+    display: flex;
+    height: 100vh;
+    div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+}

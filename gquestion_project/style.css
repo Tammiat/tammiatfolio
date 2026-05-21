@@ -1,0 +1,39 @@
+body {
+    background-color: #f1f5f8;
+    font-family: sans-serif;
+  }
+  
+  main {
+    width: 600px;
+    margin: 0 auto;
+  }
+  
+  main > h1 {
+    text-align: center;
+    color: #c59d5f;
+  }
+  
+  section > div {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    margin: 40px 0;
+  }
+  section > div > div {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  section > div > div > h2 {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  section > div > div > p {
+    display: none;
+    border-top: 1px solid darkgrey;
+    padding-top: 10px;
+    color: slategrey;
+  }
+  
